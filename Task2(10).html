@@ -1,0 +1,30 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            let account={
+                name:"Akshay",
+                balance:50000,
+            deposit(amount){
+                if(amount>0){
+                return this.balance+amount;
+                }
+                else{
+                    return this.balance;
+                }
+            },
+            withdraw(amount){
+                if(amount>0){
+                return "Amount is withdraw";
+                }
+                else{
+                    return "Amount is not withdraw";
+                }
+            }
+        };
+        console.log(account.name);
+        console.log(account.deposit(30000));
+        console.log(account.withdraw(0));
+        </script>
+    </body>
+</html>
